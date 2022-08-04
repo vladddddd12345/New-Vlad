@@ -1,0 +1,126 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658988971361' stop='1658988975342'>
+    <name>Main page: Open link</name>
+    <title>Main page: Open link</title>
+    <test-cases>
+        <test-case start='1658988971362' status='passed' stop='1658988971364'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658988971365' status='passed' stop='1658988973660'>
+            <name>Given I am on main page "https://mezha.media/"</name>
+            <title>Given I am on main page "https://mezha.media/"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1658988971368' status='passed' stop='1658988973659'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='bcf4670d-95e0-47d9-9709-ccf701531219-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658988973660' status='broken' stop='1658988975341'>
+            <name>When I successfully click on link</name>
+            <title>When I successfully click on link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1658988973662' status='passed' stop='1658988973696'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d9032776-4319-4b8a-a8b7-d1cbf44018ed-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='42b70074-f9ea-4c2d-afb9-8cf5f5ec4079-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658988973703' status='broken' stop='1658988975341'>
+                    <name>POST /session/:sessionId/element/893c9962-2e5e-4039-80af-325b1bb1f461/click</name>
+                    <title>POST /session/:sessionId/element/893c9962-2e5e-4039-80af-325b1bb1f461/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1658988975052' status='passed' stop='1658988975080'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='1a06f781-a577-4553-8efa-e5ec36a0e69a-attachment.json' type='application/json' size='63'/>
+                                <attachment title='Response' source='602c5e7c-de5d-4c32-a712-b7817340e34f-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1658988975088' status='broken' stop='1658988975341'>
+                            <name>POST /session/:sessionId/element/893c9962-2e5e-4039-80af-325b1bb1f461/click</name>
+                            <title>POST /session/:sessionId/element/893c9962-2e5e-4039-80af-325b1bb1f461/click</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1658988975103' status='passed' stop='1658988975132'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='6adc71f8-5a7e-475b-9520-e2c9653da729-attachment.json' type='application/json' size='63'/>
+                                        <attachment title='Response' source='505b9891-3643-4186-9087-dd67eb9a8198-attachment.json' type='application/json' size='83'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                                <step start='1658988975135' status='broken' stop='1658988975341'>
+                                    <name>POST /session/:sessionId/element/1dc3eac0-30a8-41cb-9e9d-81ccbb5b5962/click</name>
+                                    <title>POST /session/:sessionId/element/1dc3eac0-30a8-41cb-9e9d-81ccbb5b5962/click</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable: element not interactable</message>
+                <stack-trace>element not interactable: element not interactable
+                  (Session info: chrome=103.0.5060.134)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658988975341' status='passed' stop='1658988975342'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

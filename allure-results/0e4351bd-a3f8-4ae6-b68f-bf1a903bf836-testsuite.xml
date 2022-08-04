@@ -1,0 +1,132 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658990163178' stop='1658990166303'>
+    <name>Main page: Open link</name>
+    <title>Main page: Open link</title>
+    <test-cases>
+        <test-case start='1658990163179' status='passed' stop='1658990163180'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658990163181' status='passed' stop='1658990165179'>
+            <name>Given I am on main page "https://mezha.media/"</name>
+            <title>Given I am on main page "https://mezha.media/"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1658990163183' status='passed' stop='1658990165178'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4b0c8fe3-a76d-49a0-8ffa-8d83392f63e4-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658990165179' status='passed' stop='1658990166275'>
+            <name>When I successfully click 3 dots button</name>
+            <title>When I successfully click 3 dots button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1658990165181' status='passed' stop='1658990165201'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='82e14060-8d88-4085-8817-2a1ed6e72257-attachment.json' type='application/json' size='49'/>
+                        <attachment title='Response' source='92a64da2-ae5f-4c66-a584-c60a8eb93121-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658990165212' status='passed' stop='1658990165272'>
+                    <name>POST /session/:sessionId/element/5bffe6b2-46dd-402c-937f-568a5d95c66b/click</name>
+                    <title>POST /session/:sessionId/element/5bffe6b2-46dd-402c-937f-568a5d95c66b/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658990166276' status='broken' stop='1658990166302'>
+            <name>When I successfully input searching dota</name>
+            <title>When I successfully input searching dota</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1658990166278' status='passed' stop='1658990166296'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='85c0f122-cc86-43f9-94f6-28c64ae69f5e-attachment.json' type='application/json' size='46'/>
+                        <attachment title='Response' source='bc3ca660-17e9-480b-b2d3-cdd79d387a1d-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: (intermediate value).input is not a function</message>
+                <stack-trace>TypeError: (intermediate value).input is not a function
+                    at World.&lt;anonymous> (/Users/romantikkk/WebstormProjects/New-Vlad/features/step-definitions/megalink.ts:17:33)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658990166302' status='pending' stop='1658990166302'>
+            <name>When I click on search button</name>
+            <title>When I click on search button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658990166302' status='passed' stop='1658990166303'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
