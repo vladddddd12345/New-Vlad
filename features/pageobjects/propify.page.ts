@@ -1,32 +1,41 @@
 import Page from './page';
 class PropifyPage extends Page {
-    get email() {
+    private get email() {
         return $('[name=email]');
     }
 
-    get password() {
+    private get password() {
         return $('[name=password]');
     }
 
-    get login() {
+    private get login() {
         return $('[type=submit]');
 
     }
 
-    get searching() {
+    private get  searching() {
         return $('[type=text]');
 
     }
 
-    get erase() {             //public get
+    private get erase() {             //public get
         return $('.ant-input-suffix')
     }
 
-    async email_function (email:string) {     //make as function
+    async email_field (email:string) {     //make as function
         await (this.email).setValue(email)
     }
-    async password_function (password:string) {
+    async password_field (password:string) {
         await (this.password).setValue(password)
+    }
+    async login_button () {
+          await (await this.login).click()
+}
+    async searching_field (search:string) {
+        await (this.searching).setValue(search)
+    }
+    async erase_click () {
+        await (this.erase).click()
     }
 
     // public async login (email: string, password: string, search: string) {
