@@ -6,7 +6,7 @@
         await browser.maximizeWindow()
     });
 
-    When(/^I input (.+) and (.+)$/, async (email:string,password:string) => {
+    When(/^I input (.+) and (.+) and press the submit button$/, async (email:string,password:string) => {
         await LoginPageMaint.login(email, password)
         // const email_input =$('[name=username]')
         // await (await email_input).setValue(email)
@@ -14,11 +14,11 @@
         // await (await password_input).setValue(password)
         await browser.pause (3000)
     });
-    When(/^I press the submit button$/, async () => {
-        const s_btn =$('[type=submit]')
-        await (await s_btn).click()
-        await browser.pause (3000)
-    });
+    // When(/^I press the submit button$/, async () => {
+    //     const s_btn =$('[type=submit]')
+    //     await (await s_btn).click()
+    //     await browser.pause (3000)
+    // });
 
     Then(/^I will see Dashboard title (.+)$/, async (title) => {
         const dashboard =$('h6=Dashboard')
