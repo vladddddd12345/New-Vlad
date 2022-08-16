@@ -38,6 +38,10 @@ class PropifyPage extends Page {
         await (this.erase).click()
     }
 
+    public open () {
+          return super.open('login1')
+    }
+
     // public async login (email: string, password: string, search: string) {
     //     await this.inputemail.setValue(email);
     //     await this.inputepassword.setValue(password);

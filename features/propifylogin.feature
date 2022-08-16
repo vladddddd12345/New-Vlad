@@ -2,7 +2,7 @@
 
         Scenario Outline: Successful login
 
-        Given I am on home page <homepage>
+        Given I am on login1 page
         When I input email <email> password <password>
         And I click on submit button
         And I input search <searchpropify>
@@ -12,8 +12,8 @@
         Then I should see header with text <header>
         Then I should see url <url>
             Examples:
-              | homepage                                                                                                                                         | email                   | password     | searchpropify | header                | url                                                              |
-              | https://auth-client-stage.dev.propify.com/login?returnTo=Lw%3D%3D&callbackUrl=https%3A%2F%2Fadmin-client-stage.dev.propify.com%2Fauth%2Fcallback | vkaramushka@propify.com | Aaaaaaaa1234 | Vlad          | Collections Dashboard | https://admin-client-stage.dev.propify.com/dashboard/collections |
+              | email                   | password     | searchpropify | header                | url                                                              |
+              | vkaramushka@propify.com | Aaaaaaaa1234 | VLad          | Collections Dashboard | https://admin-client-stage.dev.propify.com/dashboard/collections |
 
 
 
