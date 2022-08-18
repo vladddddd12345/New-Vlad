@@ -12,6 +12,7 @@
         // await (await email_input).setValue(email)
         // const password_input =$('#password')
         // await (await password_input).setValue(password)
+
         await browser.pause (3000)
     });
     // When(/^I press the submit button$/, async () => {
