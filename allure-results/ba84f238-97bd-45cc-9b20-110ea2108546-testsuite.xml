@@ -1,0 +1,131 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660856770949' stop='1660856776285'>
+    <name>Just main page check: </name>
+    <title>Just main page check: </title>
+    <test-cases>
+        <test-case start='1660856770949' status='passed' stop='1660856770951'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1660856770952' status='passed' stop='1660856775892'>
+            <name>Given I open main page https://tenant-client-stage.dev.propify.com/user/login</name>
+            <title>Given I open main page https://tenant-client-stage.dev.propify.com/user/login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps>
+                <step start='1660856770954' status='passed' stop='1660856773749'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5699186a-58f1-41c3-9ad6-64d2acd3c3f9-attachment.json' type='application/json' size='69'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660856773749' status='passed' stop='1660856773888'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='36c647a1-f2c5-4b91-80be-ce80f83ff25a-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1660856775892' status='broken' stop='1660856776283'>
+            <name>When I input email vlad@gmail.com</name>
+            <title>When I input email vlad@gmail.com</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps>
+                <step start='1660856775894' status='passed' stop='1660856775940'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='49085c79-04a1-46df-88c0-2e6d9941463a-attachment.json' type='application/json' size='59'/>
+                        <attachment title='Response' source='b81f206e-9f8f-4c89-bbff-52ac297151e1-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660856775946' status='passed' stop='1660856775979'>
+                    <name>POST /session/:sessionId/element/67fb336e-b157-4616-a3c9-6996cf1164d0/clear</name>
+                    <title>POST /session/:sessionId/element/67fb336e-b157-4616-a3c9-6996cf1164d0/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660856775984' status='passed' stop='1660856776279'>
+                    <name>POST /session/:sessionId/element/67fb336e-b157-4616-a3c9-6996cf1164d0/value</name>
+                    <title>POST /session/:sessionId/element/67fb336e-b157-4616-a3c9-6996cf1164d0/value</title>
+                    <attachments>
+                        <attachment title='Request' source='f2d6a752-7aba-43fe-a18a-6c56426cba1e-attachment.json' type='application/json' size='31'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Wrong parameters applied for elementClear</message>
+                <stack-trace>Error: Wrong parameters applied for elementClear
+                Usage: elementClear(elementId)
+                
+                Property Description:
+                  "elementId" (string): the id of an element returned in a previous call to Find Element(s)
+                
+                For more info see https://w3c.github.io/webdriver/#dfn-element-clear
+                
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async World.&lt;anonymous> (/Users/romantikkk/WebstormProjects/New-Vlad/features/step-definitions/newtestcheck.ts:12:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1660856776283' status='pending' stop='1660856776284'>
+            <name>And I input password Aaaaaaaa12</name>
+            <title>And I input password Aaaaaaaa12</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1660856776284' status='passed' stop='1660856776284'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
