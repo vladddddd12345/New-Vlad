@@ -1,24 +1,36 @@
 import Page from './page';
 class PropifyPage extends Page {
-    private get email() {
-        return $('[name=email]');
+    public get email() {
+        return $('[name=email]')
+    };
+
+    public get password() {
+        return $('[name=password]')
+    };
+
+    public get login() {
+        return $('[type=submit]')
+
+    };
+
+    public get  searching() {
+        return $('[type=text]')
+
+    };
+    public get  dashboard_pageclick() {
+        return $('.ant-menu-submenu-title')
+
     }
-
-    private get password() {
-        return $('[name=password]');
-    }
-
-    private get login() {
-        return $('[type=submit]');
+    public get  collections_pageclick() {
+        return $('a[href*="/dashboard/collections"]')
 
     }
+    public get header_check () {
+        return $('.ant-pro-grid-content')
+    };
 
-    private get  searching() {
-        return $('[type=text]');
 
-    }
-
-    private get erase() {             //public get
+    public get erase() {             //public get
         return $('.ant-input-suffix')
     }
 
@@ -37,9 +49,19 @@ class PropifyPage extends Page {
     async erase_click () {
         await (this.erase).click()
     }
+    async dash_click () {     //make as function
+        await (this.dashboard_pageclick).click()
+    }
+    async collections_click () {     //make as function
+        await (this.collections_pageclick).click()
+    }
+
 
     public open () {
           return super.open('login1')
+    }
+    public open1 () {
+        return super.open1('collections')
     }
 
     // public async login (email: string, password: string, search: string) {

@@ -10,10 +10,10 @@
         And I click Dashboard in the side menu
         And I click Collections page
         Then I should see header with text <header>
-        Then I should see url <url>
+        Then I should see collections url
             Examples:
-              | email                   | password     | searchpropify | header                | url                                                              |
-              | vkaramushka@propify.com | Aaaaaaaa1234 | VLad          | Collections Dashboard | https://admin-client-stage.dev.propify.com/dashboard/collections |
+              | email                   | password     | searchpropify | header                |
+              | vkaramushka@propify.com | Aaaaaaaa1234 | VLad          | Collections Dashboard |
 
 
 
