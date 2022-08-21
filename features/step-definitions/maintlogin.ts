@@ -1,5 +1,4 @@
     import {Given, Then, When} from "@wdio/cucumber-framework";
-    import LoginMaint from "..pageobjects/login.page.maint";
     import LoginPageMaint from "../pageobjects/login.page.maint";
     Given(/^I'm on the page (.+)$/, async (maint) => {
         await browser.url(maint)
