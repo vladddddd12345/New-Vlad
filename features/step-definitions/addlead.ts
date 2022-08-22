@@ -1,31 +1,34 @@
 import {Given,When,Then} from "@wdio/cucumber-framework";
+import Leads from "../pageobjects/addleadelem";
 
   Given(/^I'm on thee page (.+)$/, async (url:string) => {
     await browser.url(url)
     await browser.maximizeWindow()
     // await browser.deleteCookies()
     // const cookies = await browser.getCookies()
-    // console.log(cookies)
-
       // await browser.pause (2000)
+
   });
-  When(/^I'm input email (.+)$/, async (email1:string) => {
-      const emails = $('[type=email]')
-      await (await emails).setValue(email1)
+  When(/^I'm input email (.+)$/, async (email1) => {
+      // const emails = $('[type=email]')
+      // await (await emails).setValue(email1)
+      await Leads.email_funct(email1)
       console.log(email1)
       // await browser.pause (2000)
   });
-  When(/^I'm input password (.+)$/, async (password1:string) => {
-    const passwords = $('[type=password]')
-    await (await passwords).setValue(password1)
-    console.log(password1)
+  When(/^I'm input password (.+)$/, async (password1) => {
+    // const passwords = $('[type=password]')
+    // await (await passwords).setValue(password1)
+      await Leads.password_funct(password1)
+      console.log(password1)
     // await browser.pause (2000)
   });
   When(/^Click login button$/, async () => {
-    const login = $('[type=submit]')
-    await (await login).click()
-    console.log(login)
-    await browser.pause (4000)
+    // const login = $('[type=submit]')
+    // await (await login).click()
+    //   await Leads.Login_btn.click()
+      await Leads.login_funct()
+      await browser.pause (4000)
   });
   // When(/^I click Leasing page$/, async () => {
   //   const leasing = $('/html/body/div/div/section/aside/div/div[2]/ul/li[8]/div/span/span[2]')

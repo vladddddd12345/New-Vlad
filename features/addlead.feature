@@ -18,4 +18,4 @@ Feature: Leads page
 
       Examples:
         |url                                                                                                                                                                 | email1                  | password1    | firstname | lastname | emailfield     | phonefield       | units    | message                    |
-        |https://auth-client-stage.dev.propify.com/login?returnTo=L3Byb3NwZWN0cy9sZWFkcw%3D%3D&callbackUrl=https%3A%2F%2Fadmin-client-stage.dev.propify.com%2Fauth%2Fcallback| vkaramushka@propify.com | Aaaaaaaa1234 | Vlad      | Kar      | vlad@gmail.com | 4434343345       | madison  | Lead created successfully  |
+        |https://auth-client-stage.dev.propify.com/login?returnTo=L3Byb3NwZWN0cy9sZWFkcw%3D%3D&callbackUrl=https%3A%2F%2Fadmin-client-stage.dev.propify.com%2Fauth%2Fcallback| vkaramushka@propify.com | Aaaaaaaa12 | Vlad      | Kar      | vlad@gmail.com | 4434343345       | madison  | Lead created successfully  |
