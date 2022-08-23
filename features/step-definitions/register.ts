@@ -1,4 +1,5 @@
 import {Given, Then, When} from "@wdio/cucumber-framework";
+import PropifyPage from "../pageobjects/propify.page";
 
 
     Given(/^I am on practice page \"([^\"]*)\"$/, async function (appurl:string) {
@@ -76,4 +77,5 @@ import {Given, Then, When} from "@wdio/cucumber-framework";
     Then(/^I validate page header again \"([^\"]*)\"$/, async function (youraccounthasbeencreated:string) {
         const headernew = $("//i")
         expect(await headernew).toHaveText(youraccounthasbeencreated)
+        //await expect(PropifyPage.header_check).toHaveTextContaining(header)
     })

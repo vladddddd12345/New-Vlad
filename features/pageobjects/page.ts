@@ -8,10 +8,7 @@ export default class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     public open () {
-        return browser.url(`https://auth-client-stage.dev.propify.com/login?returnTo=L2Rhc2hib2FyZC9jb2xsZWN0aW9ucw%3D%3D&callbackUrl=https%3A%2F%2Fadmin-client-stage.dev.propify.com%2Fauth%2Fcallback`)
-    }
-    public open1 () {
-        return browser.url(`https://admin-client-stage.dev.propify.com/dashboard/collections`)
+        return browser.url(`https://the-internet.herokuapp.com`)
     }
 
 }

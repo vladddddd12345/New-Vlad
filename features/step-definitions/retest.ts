@@ -52,6 +52,8 @@ const pages = {
   Then(/^I'm on(\w+)$/, async () => {
       // expect( await browser.getUrl()).toEqual(mainpage)
       // console.log(mainpage)
+      //await browser.generateTestReport('ola')
+      //browser.createWindow('tab')
       await pages[page].opennew()
       await browser.pause(3000)
   })
