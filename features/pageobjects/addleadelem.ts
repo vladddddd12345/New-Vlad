@@ -76,7 +76,7 @@ class Leads {
     }
     public async systemmessage_funct(message:string) {
         await this.sysmessageexsist.isDisplayed()
-        expect (this.sysmessagetext.getText()).toHaveText(message)
+        expect (await this.sysmessagetext.getText()).toEqual(message)
         // expect (this.sysmessagetext.getText()).toEqual(message)
         //expect (this.sysmessagetext.getElementText(message))
     }

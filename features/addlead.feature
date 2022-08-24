@@ -17,5 +17,5 @@ Feature: Leads page
     Then I will see modal with systemmessage <message>
 
       Examples:
-        | email1                  | password1    | firstname | lastname | emailfield     | phonefield       | units    | message                    |
-        | vkaramushka@propify.com | Aaaaaaaa12   | Vlad      | Kar      | vlad@gmail.com | 4434343345       | madison  | Lead created successfully  |
+        | email1                  | password1    | firstname | lastname | emailfield     | phonefield       | units    | message                   |
+        | vkaramushka@propify.com | Aaaaaaaa12   | Vlad      | Kar      | vlad@gmail.com | 4434343345       | madison  | Lead created successfully |

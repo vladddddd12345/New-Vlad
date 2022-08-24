@@ -14,15 +14,15 @@ class PropifyPage extends AdminPage {
     };
 
     async email_field(email1: string) {     //make as function
-        await (this.email).setValue(email1)
+        await this.email.setValue(email1)
     }
 
     async password_field(password1: string) {
-        await (this.password).setValue(password1)
+        await this.password.setValue(password1)
     }
 
     async login_button() {
-        await (await this.login).click()
+        await this.login.click()
     }
 
 

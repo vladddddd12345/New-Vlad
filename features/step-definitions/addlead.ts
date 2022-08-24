@@ -107,7 +107,7 @@ const pages = {
      //  console.log(existing)
      //  const message_funct = $('.ant-message-success=Lead created successfully')
      //  //await expect(await message_funct.getText()).toEqual(message)
-     //await expect (await message_funct).toHaveText(message)
+     //await expect (await message_funct.getText()).toHaveText(message)
       //await expect (await message_funct).toHaveTextContaining(message)
       await Leads.systemmessage_funct(message)
       console.log(message)
