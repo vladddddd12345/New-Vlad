@@ -50,7 +50,7 @@ export const config: Options.Testrunner = {
     // will be called from there.
     //
     specs: [
-        './features/**/addlead.feature'
+        './features/**/maintlogin.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -168,7 +168,7 @@ export const config: Options.Testrunner = {
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: ['./features/step-definitions/addlead.ts'],
+        require: ['./step-definitions/maintlogin.ts'],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)

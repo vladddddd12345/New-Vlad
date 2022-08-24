@@ -1,14 +1,18 @@
-   Feature: Maint page login
+Feature: Maint page login
 
-      Scenario Outline: Login to Maint Client
 
-      Given I'm on the page <maint>
-      When  I input <email> and <password> and press the submit button
-      Then  I will see Dashboard title <title>
-      Then  I will see the page <url>
+  Scenario: Forgot your password
+    Given I'm on the newpage tenantpage
+    When I press on the button Forgot your password
+    And I inputting email
+    And I press the button Resend password
+    Then I will see system message texts
 
-        Examples:
-          | maint                                                  | email                   | password   | title     | url                                                   |
-          | https://tenant-client-stage.dev.propify.com/user/login | thursdaycheck@gmail.com | Aaaaaaaa12 | Dashboard | https://tenant-client-stage.dev.propify.com/dashboard |
 
+  Scenario: Login to Maint Client
+
+    Given I'm on the newpage tenantpage
+    When  I input emailnew and passwordnew and press the submit button
+    Then  I will see Dashboard title title
+#    Then  I will see the page url
 
