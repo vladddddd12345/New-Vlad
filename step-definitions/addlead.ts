@@ -1,104 +1,83 @@
 import {Given,When,Then} from "@wdio/cucumber-framework";
 import PropifyPage from "../pageobjects/propify.page";
 import Leads from "../pageobjects/addleadelem";
+import Dashboard from "../pageobjects/dashboard";
 const pages = {
-    page : PropifyPage
+    page:PropifyPage
 }
 
-  Given(/^I'm on thee (\w+)$/, async (page) => {
+  Given(/^I'm on thee (.+)$/, async (page) => {
     // await browser.url(url)
-    await pages[page].open()
+      await pages[page].open()
+    // await PropifyPage.open(page)
+    // await PropifyPage.open()
     await browser.maximizeWindow()
     // await browser.deleteCookies()
     // const cookies = await browser.getCookies()
       // await browser.pause (2000)
 
   });
-  When(/^I'm input email (.+)$/, async (email1) => {
-      // const emails = $('[type=email]')
-      // await (await emails).setValue(email1)
-      await PropifyPage.email_field(email1)
-      console.log(email1)
-      // await browser.pause (2000)
-  });
-  When(/^I'm input password (.+)$/, async (password1) => {
-    // const passwords = $('[type=password]')
-    // await (await passwords).setValue(password1)
-      await PropifyPage.password_field(password1)
-      console.log(password1)
+  When(/^I login with valid (.+) and (.+) and click login button$/, async (email,password) => {
+    // const emails = $('[type=email]')
+    // await (await emails).setValue(email1)
+      await PropifyPage.login_function(email,password)
     // await browser.pause (2000)
   });
-  When(/^Click login button$/, async () => {
-    // const login = $('[type=submit]')
-    // await (await login).click()
-    //   await Leads.Login_btn.click()
-      await PropifyPage.login_button()
-      await browser.pause (2000)
+  Then(/^I will see (.+) title$/, async (title) => {
+    // const emails = $('[type=email]')
+    // await (await emails).setValue(email1)
+    await Dashboard.title_funct(title)
+      await browser.reloadSession()
+    // await browser.pause (2000)
   });
+
+  // When(/^I'm input email (.+)$/, async (email1) => {
+  //     // const emails = $('[type=email]')
+  //     // await (await emails).setValue(email1)
+  //     await PropifyPage.email_field(email1)
+  //     console.log(email1)
+  //     // await browser.pause (2000)
+  // });
+  // When(/^I'm input password (.+)$/, async (password1) => {
+  //   // const passwords = $('[type=password]')
+  //   // await (await passwords).setValue(password1)
+  //     await PropifyPage.password_field(password1)
+  //     console.log(password1)
+  //   // await browser.pause (2000)
+  // });
+  // When(/^Click login button$/, async () => {
+  //   // const login = $('[type=submit]')
+  //   // await (await login).click()
+  //   //   await Leads.Login_btn.click()
+  //     await PropifyPage.login_button()
+  //     await browser.pause (2000)
+  // });
   // When(/^I click Leasing page$/, async () => {
   //   const leasing = $('/html/body/div/div/section/aside/div/div[2]/ul/li[8]/div/span/span[2]')
   //   await (await leasing).click()
   //   console.log(leasing)
   //   await browser.pause (3000)
   // });
-  When(/^I click View Leads$/, async () => {
+  When(/^I navigate to Leads page$/, async () => {
     // const clicklease = $('.propifyLayout-menu-item=Leasing')
     //  await (await clicklease).click()
     // const view_leads = $('a[href*="/prospects/leads"]')
     // await (await view_leads).click()
     await Leads.viewleadspage_funct()
-    await browser.pause (2000)
-  });
-  When(/^I click Add Lead button$/, async () => {
-    // const add_leadsbtn = $('.ant-btn-default')
-    // await (await add_leadsbtn).click()
-    await Leads.addlead_funct()
-    await browser.pause (2000)
-  });
-  When(/^I fill First name (.+)$/, async (firstname) => {
-    // const firstname_funct = $('[name=firstName]')
-    // await (await firstname_funct).setValue(firstname)
-    await Leads.firstname_funct(firstname)
-    console.log(firstname)
-  });
-  When(/^I fill Last name (.+)$/, async (lastname) => {
-    // const lastname_funct = $('[name=lastName]')
-    // await (await lastname_funct).setValue(lastname)
-    await Leads.lastname_funct(lastname)
-    console.log(lastname)
-});
-   When(/^I fill emailfield (.+)$/, async (emailfield) => {
-       // const email_funct = $('[name=email]')
-       // await (await email_funct).setValue(emailfield)
-       await Leads.emailmodal_funct(emailfield)
-       console.log(emailfield)
-       await browser.pause (2000)
+
    });
-   When(/^I fill phone (.+)$/, async (phonefield) => {
-      // const phone_funct = $('[name=phone]')
-      // await (await phone_funct).click()
-      //  await (await phone_funct).addValue(phonefield)
-       await Leads.phone_funct(phonefield)
-      console.log(phonefield)
-  });
-   When(/^I input unit (.+)$/, async (units) => {
-       // const unit_funct = $('#rc_select_1')
-       // await (await unit_funct).setValue(units)
-       await Leads.unitsinput_funct(units)
-       console.log(units)
-       await browser.pause (2000)
-   });
-   When(/^I select unit$/, async () => {
-     // const select_funct = $('.ant-select-item-option-content=Madison Square Garden, 2 New York NY')
-     // await (await select_funct).click()
-     await Leads.unitsselect_funct()
-     console.log()
-       await browser.pause (2000)
-   });
-   When(/^I click button save$/, async () => {
+   When(/^I add a lead with (.+), (.+), (.+), (.+), (.+) and press Save button$/, async (firstname,lastname,emailfield,phonefield,units) => {
       // const save_funct = $('.ant-btn-primary=Save')
       // await (await save_funct).click()
-       await Leads.savebtn_funct()
+      //  await Leads.addlead_funct()
+      //  await Leads.firstname_funct(firstname)
+      //  await Leads.lastname_funct(lastname)
+      //  await Leads.emailmodal_funct(emailfield)
+      //  await Leads.phone_funct(phonefield)
+      //  await Leads.unitsinput_funct(units)
+      //  await Leads.unitsselect_funct()
+      //  await Leads.savebtn_funct()
+       await Leads.addlead(firstname,lastname,emailfield,phonefield,units)
        await browser.pause (3000)
    });
   Then(/^I will see modal with systemmessage (.+)$/, async (message) => {

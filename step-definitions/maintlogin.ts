@@ -8,34 +8,35 @@
         // await browser.url(maint)
         await pages[tenantpage].open()
         await browser.maximizeWindow()
+        await browser.pause(2000)
     });
 
     When(/^I press on the button Forgot your password$/, async () => {
         // const forgot = $('a[href*="/user/password-reset"]')
         // await (await forgot).click()
         await LoginPageMaint.forgotpass_funct()
-        await browser.pause(3000)
+        await browser.pause(2000)
     });
 
     When(/^I inputting (.+)$/, async (email) => {
         // const email_input = $('[name=emailOrPhone]')
         // await (await email_input).setValue(email)
         await LoginPageMaint.justlogin(email)
-        await browser.pause(3000)
+        await browser.pause(2000)
     });
 
     When(/^I press the button Resend password$/, async () => {
         // const reset = $('[type=button]')
         // await (await reset).click()
         await LoginPageMaint.forgotbtn()
-        await browser.pause(3000)
+        await browser.pause(2000)
     });
 
     Then(/^I will see system message (.+)$/, async (textstitle) => {
         // const errormes =$('#emailOrPhone-helper-text')
         // expect(await errormes.getText()).toEqual(texts)
         await LoginPageMaint.sysmess_function(textstitle)
-        await browser.pause(3000)
+        await browser.pause(2000)
         // await browser.reloadSession()
     });
 
