@@ -23,13 +23,13 @@ class Leads {
     // public async addlead_funct () {
     //     await this.addleads_btn.click()
     // }
-    public async addlead (firstname:string, lastname:string, emailfield:string,phonefield:string, units:string) {
-        await this.firstnamefield.setValue(firstname="Vlad")
-        await this.lastnamefield.setValue(lastname="Kar")
-        await this.emailfield.setValue(emailfield="vlad@gmail.com")
+    public async addlead(lead: string) {
+        await this.firstnamefield.setValue("Vlad")
+        await this.lastnamefield.setValue("Kar")
+        await this.emailfield.setValue("vlad@gmail.com")
         await this.phonefield.click()
-        await this.phonefield.addValue(phonefield="7654987654")
-        await this.unitsfield.setValue(units="madison")
+        await this.phonefield.addValue("7654987654")
+        await this.unitsfield.setValue("madison")
         await this.selectunitfield.click()
         await this.savebtn.click()
     }

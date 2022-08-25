@@ -9,9 +9,5 @@ Feature: Login page, Admin
     Given I'm on thee page
     When I login with valid email and password and click login button
     And I navigate to Leads page
-    And I add a lead with firstname, lastname, email, phonefield, units and press Save button
+    And I add a lead and press Save button
     Then I will see modal with systemmessage <message>
-
-#      Examples:
-#        | email1                  | password1    | firstname | lastname | emailfield     | phonefield       | units    | message                   |
-#        | vkaramushka@propify.com | Aaaaaaaa12   | Vlad      | Kar      | vlad@gmail.com | 4434343345       | madison  | Lead created successfully |

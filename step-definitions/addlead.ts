@@ -6,7 +6,7 @@ const pages = {
     page:PropifyPage
 }
 
-  Given(/^I'm on thee (.+)$/, async (page) => {
+  Given(/I'm on thee (.+)/, async (page) => {
     // await browser.url(url)
       await pages[page].open()
     // await PropifyPage.open(page)
@@ -17,13 +17,13 @@ const pages = {
       // await browser.pause (2000)
 
   });
-  When(/^I login with valid (.+) and (.+) and click login button$/, async (email,password) => {
+  When(/I login with valid (.+) and (.+) and click login button/, async (email,password) => {
     // const emails = $('[type=email]')
     // await (await emails).setValue(email1)
       await PropifyPage.login_function(email,password)
     // await browser.pause (2000)
   });
-  Then(/^I will see (.+) title$/, async (title) => {
+  Then(/I will see (.+) title/, async (title) => {
     // const emails = $('[type=email]')
     // await (await emails).setValue(email1)
     await Dashboard.title_funct(title)
@@ -58,7 +58,7 @@ const pages = {
   //   console.log(leasing)
   //   await browser.pause (3000)
   // });
-  When(/^I navigate to Leads page$/, async () => {
+  When(/I navigate to Leads page/, async () => {
     // const clicklease = $('.propifyLayout-menu-item=Leasing')
     //  await (await clicklease).click()
     // const view_leads = $('a[href*="/prospects/leads"]')
@@ -66,7 +66,7 @@ const pages = {
     await Leads.viewleadspage_funct()
 
    });
-   When(/^I add a lead with (.+), (.+), (.+), (.+), (.+) and press Save button$/, async (firstname,lastname,emailfield,phonefield,units) => {
+   When(/I add a (.+) and press Save button/, async (lead) => {
       // const save_funct = $('.ant-btn-primary=Save')
       // await (await save_funct).click()
       //  await Leads.addlead_funct()
@@ -77,10 +77,10 @@ const pages = {
       //  await Leads.unitsinput_funct(units)
       //  await Leads.unitsselect_funct()
       //  await Leads.savebtn_funct()
-       await Leads.addlead(firstname,lastname,emailfield,phonefield,units)
+       await Leads.addlead(lead)
        await browser.pause (3000)
    });
-  Then(/^I will see modal with systemmessage (.+)$/, async (message) => {
+  Then(/I will see modal with systemmessage (.+)/, async (message) => {
      // const existing =$('.ant-message-notice-content')
      //  await (await existing).isDisplayed()
      //  console.log(existing)

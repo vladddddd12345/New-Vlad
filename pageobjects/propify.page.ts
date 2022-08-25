@@ -1,9 +1,7 @@
 import AdminPage from "./adminmain";
 class PropifyPage extends AdminPage {
     public get email() {return $('[name=email]')};
-
     public get password() {return $('[name=password]')};
-
     public get login() {return $('[type=submit]')};
 
     // async email_field(email1: string) {await this.email.setValue(email1)}
