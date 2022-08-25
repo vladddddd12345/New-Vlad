@@ -23,7 +23,7 @@ class Leads {
     // public async addlead_funct () {
     //     await this.addleads_btn.click()
     // }
-    public async addlead(lead: string) {
+    public async addlead(lead) {
         await this.firstnamefield.setValue("Vlad")
         await this.lastnamefield.setValue("Kar")
         await this.emailfield.setValue("vlad@gmail.com")
@@ -36,6 +36,7 @@ class Leads {
     public async systemmessage_funct(message:string) {
         await this.sysmessageexsist.isDisplayed()
         expect (await this.sysmessagetext.getText()).toEqual(message="Lead created successfully")
+        console.log(message)
         // expect (this.sysmessagetext.getText()).toEqual(message)
         //expect (this.sysmessagetext.getElementText(message))
     }

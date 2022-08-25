@@ -89,7 +89,6 @@ const pages = {
      //await expect (await message_funct.getText()).toHaveText(message)
       //await expect (await message_funct).toHaveTextContaining(message)
       await Leads.systemmessage_funct(message)
-      console.log(message)
       //await (await passwordfunct).saveScreenshot('/Users/romantikkk/Downloads/Something/screen1.png')
       await browser.saveScreenshot('/Users/romantikkk/Downloads/Something/screen2.png')
       await browser.pause(2000)
