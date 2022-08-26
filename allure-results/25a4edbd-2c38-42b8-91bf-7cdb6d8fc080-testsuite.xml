@@ -1,0 +1,203 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661506304559' stop='1661506319055'>
+    <name>Login page, Admin: Successful login as admin</name>
+    <title>Login page, Admin: Successful login as admin</title>
+    <test-cases>
+        <test-case start='1661506304559' status='passed' stop='1661506304561'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661506304561' status='passed' stop='1661506308608'>
+            <name>Given I'm on thee page</name>
+            <title>Given I'm on thee page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps>
+                <step start='1661506304563' status='passed' stop='1661506308423'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='05b98919-9a4a-4e59-a45a-b29d2679bd4a-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661506308423' status='passed' stop='1661506308607'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='f0263285-6243-4ecb-9ff7-f3bbf3ca6699-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1661506308608' status='passed' stop='1661506309025'>
+            <name>When I login with valid email and password and click login button</name>
+            <title>When I login with valid email and password and click login button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps>
+                <step start='1661506308610' status='passed' stop='1661506308624'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c4810785-d44a-47a2-ad5d-fd7b6c1d19a8-attachment.json' type='application/json' size='56'/>
+                        <attachment title='Response' source='a17a467f-9a3e-4ab3-b8d1-9cb8e61a242d-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661506308628' status='passed' stop='1661506308654'>
+                    <name>POST /session/:sessionId/element/1631f863-b9a6-4fca-becd-5a079e6266be/clear</name>
+                    <title>POST /session/:sessionId/element/1631f863-b9a6-4fca-becd-5a079e6266be/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1661506308659' status='passed' stop='1661506308842'>
+                    <name>POST /session/:sessionId/element/1631f863-b9a6-4fca-becd-5a079e6266be/value</name>
+                    <title>POST /session/:sessionId/element/1631f863-b9a6-4fca-becd-5a079e6266be/value</title>
+                    <attachments>
+                        <attachment title='Request' source='abd0a8c7-90ce-4568-8248-1c2d8ec64210-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661506308842' status='passed' stop='1661506308852'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ee42fda6-af09-455e-aeb3-b9e1654e8014-attachment.json' type='application/json' size='59'/>
+                        <attachment title='Response' source='8d428932-1c6c-43e6-b53e-a22a52b55db5-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661506308854' status='passed' stop='1661506308878'>
+                    <name>POST /session/:sessionId/element/4c1c4171-9951-46d8-8bc7-3577b1de024d/clear</name>
+                    <title>POST /session/:sessionId/element/4c1c4171-9951-46d8-8bc7-3577b1de024d/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1661506308879' status='passed' stop='1661506308947'>
+                    <name>POST /session/:sessionId/element/4c1c4171-9951-46d8-8bc7-3577b1de024d/value</name>
+                    <title>POST /session/:sessionId/element/4c1c4171-9951-46d8-8bc7-3577b1de024d/value</title>
+                    <attachments>
+                        <attachment title='Request' source='1f9a977b-ef14-498e-acda-6160d291822b-attachment.json' type='application/json' size='26'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661506308947' status='passed' stop='1661506308957'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2f3e1f43-6581-4eac-99f9-3630c55a6404-attachment.json' type='application/json' size='57'/>
+                        <attachment title='Response' source='35239f92-a417-417f-9782-a4c0d62ac119-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661506308959' status='passed' stop='1661506309024'>
+                    <name>POST /session/:sessionId/element/d946562b-3d8e-434c-8177-edead60e4273/click</name>
+                    <title>POST /session/:sessionId/element/d946562b-3d8e-434c-8177-edead60e4273/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1661506309025' status='broken' stop='1661506319053'>
+            <name>Then I will see Dashboard title</name>
+            <title>Then I will see Dashboard title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps>
+                <step start='1661506309025' status='passed' stop='1661506309038'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='199286cf-4c36-48eb-a793-4b7e3fed95ac-attachment.json' type='application/json' size='139'/>
+                        <attachment title='Response' source='ef2417af-3628-4c30-b018-59c728a21422-attachment.json' type='application/json' size='2022'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661506309041' status='passed' stop='1661506309050'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='64db6938-417c-4f1b-968c-2fbecc3bbb43-attachment.json' type='application/json' size='139'/>
+                        <attachment title='Response' source='cb5f4622-427f-443f-a7f4-5404124be80b-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661506309542' status='broken' stop='1661506319052'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='d06d4f46-9f1b-42d0-b0a0-38006e1ad87f-attachment.json' type='application/json' size='139'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call getText on element with selector ".ant-page-header-heading-left=Venture Dashboard" because element wasn't found</message>
+                <stack-trace>Error: Can't call getText on element with selector ".ant-page-header-heading-left=Venture Dashboard" because element wasn't found
+                    at async Dashboard.title_funct (/Users/romantikkk/WebstormProjects/New-Vlad/pageobjects/dashboard.ts:4:17)
+                    at async World.&lt;anonymous> (/Users/romantikkk/WebstormProjects/New-Vlad/step-definitions/addlead.ts:29:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1661506319053' status='pending' stop='1661506319053'>
+            <name>And I will see dashboards url</name>
+            <title>And I will see dashboards url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661506319054' status='passed' stop='1661506319054'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.101'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

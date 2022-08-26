@@ -38,6 +38,7 @@ const pages = {
     //await expect (await message_funct.getText()).toHaveText(message)
     //await expect (await message_funct).toHaveTextContaining(message)
     await Dashboard.dashboard_url(page)
+    await browser.pause (1000)
     await browser.reloadSession()
     //await (await passwordfunct).saveScreenshot('/Users/romantikkk/Downloads/Something/screen1.png')
   });
