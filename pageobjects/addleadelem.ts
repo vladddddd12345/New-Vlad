@@ -1,3 +1,5 @@
+import PropifyPage from "./propify.page";
+
 class Leads {
 
     public get leads_page () {return $('.propifyLayout-menu-item=Leasing')};
@@ -40,9 +42,18 @@ class Leads {
         // expect (this.sysmessagetext.getText()).toEqual(message)
         //expect (this.sysmessagetext.getElementText(message))
     }
+    async leads_url(leads:string) {
+        expect (await browser.getUrl()).toEqual(leads='https://admin-client-stage.dev.propify.com/prospects/leads')
+        console.log(leads)
+    }
 
 }
 export default new Leads();
+
+
+
+
+
 
 
 

@@ -24,11 +24,22 @@ const pages = {
     // await browser.pause (2000)
   });
   Then(/I will see (.+) title/, async (title) => {
-    // const emails = $('[type=email]')
-    // await (await emails).setValue(email1)
-    await Dashboard.title_funct(title)
-      await browser.reloadSession()
-    // await browser.pause (2000)
+      // const emails = $('[type=email]')
+      // await (await emails).setValue(email1)
+      await Dashboard.title_funct(title)
+  });
+
+  Then(/I will see (.+) url/, async (page) => {
+    // const existing =$('.ant-message-notice-content')
+    //  await (await existing).isDisplayed()
+    //  console.log(existing)
+    //  const message_funct = $('.ant-message-success=Lead created successfully')
+    //  //await expect(await message_funct.getText()).toEqual(message)
+    //await expect (await message_funct.getText()).toHaveText(message)
+    //await expect (await message_funct).toHaveTextContaining(message)
+    await Dashboard.dashboard_url(page)
+    await browser.reloadSession()
+    //await (await passwordfunct).saveScreenshot('/Users/romantikkk/Downloads/Something/screen1.png')
   });
 
   // When(/^I'm input email (.+)$/, async (email1) => {
@@ -64,6 +75,7 @@ const pages = {
     // const view_leads = $('a[href*="/prospects/leads"]')
     // await (await view_leads).click()
     await Leads.viewleadspage_funct()
+    await browser.pause (2000)
 
    });
    When(/I add a (.+) and press Save button/, async (lead) => {
@@ -78,7 +90,7 @@ const pages = {
       //  await Leads.unitsselect_funct()
       //  await Leads.savebtn_funct()
        await Leads.addlead(lead)
-       await browser.pause (3000)
+       await browser.pause (2000)
    });
   Then(/I will see modal with systemmessage (.+)/, async (message) => {
      // const existing =$('.ant-message-notice-content')
@@ -92,7 +104,7 @@ const pages = {
       //await (await passwordfunct).saveScreenshot('/Users/romantikkk/Downloads/Something/screen1.png')
       await browser.saveScreenshot('/Users/romantikkk/Downloads/Something/screen2.png')
       await browser.pause(2000)
-  })
+  });
   // Then(/^I will see Leads modal$/, async () => {
   //   const leds_modal = $('.ant-modal-content')
   //   await (await leds_modal).click()
@@ -107,3 +119,16 @@ const pages = {
   //   console.log(text)
   //   await browser.pause(2000)
   // })
+  Then(/I will see (.+) URL/, async (page) => {
+      // const existing =$('.ant-message-notice-content')
+      //  await (await existing).isDisplayed()
+      //  console.log(existing)
+      //  const message_funct = $('.ant-message-success=Lead created successfully')
+      //  //await expect(await message_funct.getText()).toEqual(message)
+      //await expect (await message_funct.getText()).toHaveText(message)
+      //await expect (await message_funct).toHaveTextContaining(message)
+      await Leads.leads_url(page)
+      //await (await passwordfunct).saveScreenshot('/Users/romantikkk/Downloads/Something/screen1.png')
+      await browser.saveScreenshot('/Users/romantikkk/Downloads/Something/screen2.png')
+      await browser.pause(2000)
+  })
